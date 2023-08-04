@@ -1,7 +1,7 @@
 import React from 'react'
 import {FaBars, FaTimes} from "react-icons/fa";
 import { useRef } from 'react';
-import './Navbar.css'
+import '/home/himansu/Desktop/projects/ARestaurant/client/src/styles/main.css'
 
 
 
@@ -14,25 +14,21 @@ const Navbar = () => {
     }
 
   return (
-    <div id='navbar'>
-      <div><h3>Logo</h3></div>
-      <div>
-        <nav ref={navRef}>
+    <header>
+       <h2> Restaurant Logo</h2>
+       <nav ref={navRef}>
             <a href="/#"> Home </a>
-            <a href="/#"> Services </a>
-            <a href="/#"> Blog </a>
-            <a href="/#"> About Us </a>
+            <a href="/Services"> Services </a>
+            <a href="/Blog"> Blog </a>
+            <a href="/About"> About Us </a>
+            <button className='nav-btn nav-close-btn' onClick={showNavbar} >
+                <FaBars />
+            </button>
         </nav>
-      </div>
-      <div>
-        <button className='nav-btn nav-close-btn' onClick={showNavbar} >
-            <FaBars />
-        </button>
         <button className='nav-btn nav-close-btn' onClick={showNavbar}>
             <FaTimes />
         </button>
-      </div>
-    </div>
+    </header>
   )
 }
 
