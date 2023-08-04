@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Menu from "./pages/Menu";
-import Pagenotfound from "./pages/Pagenotfound";
+import Home from "./containers/Home";
+import About from "./containers/About";
+import Contact from "./containers/Contact";
+import Menu from "./containers/Menu";
+import Pagenotfound from "./containers/Pagenotfound";
 function App() {
   return (
     <div>
