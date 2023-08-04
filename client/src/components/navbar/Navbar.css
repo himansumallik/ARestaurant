@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Titillium+Web:ital,wght@1,400;1,600;1,700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+:root{
+    -moz-text-decoration-color: #29335C;
+    --mainColorlight: #29335C;
+    
+
+}
