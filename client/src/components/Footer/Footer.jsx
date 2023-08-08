@@ -9,17 +9,23 @@ import PlaceIcon from '@mui/icons-material/Place';
 import EmailIcon from '@mui/icons-material/Email';
 import Button from '@mui/material/Button';
 import { Box, Typography} from "@mui/material";
+
 const Footer = () => {
   return (
     <>
+
+
+
+    {/* CONTACT SECTION */}
       <Box
         display="grid"
         gap="30px"
-        sx={{ textAlign: "center", bgcolor: "#34282C", color: "white", p: 2 }}
+        sx={{ textAlign: "center", bgcolor: "#34282C", color: "goldenrod", p: 2 }}
       >
           <Box>
             <Typography
               fontSize='30px'
+              color="white"
               sx={{
                 "@media (max-width:600px)": {
                   fontSize: "20px",
@@ -44,7 +50,7 @@ const Footer = () => {
               "@media (max-width:600px)": {
                 fontSize: "30px",
                 display:"grid", 
-                alignItems:"center", 
+                alignItems:"left", 
                 justifyContent:"space-around",
                 gap:"30px"
               },
@@ -54,25 +60,43 @@ const Footer = () => {
               }
             }}>
             <Box display="flex">
-              <Box><CallIcon/></Box>
+              <Box sx={{
+                    "& svg:hover": {
+                    color: "green",
+                    transform: "translateX(5px)",
+                    transition: "all 400ms",
+                    }
+                  }}><CallIcon/></Box>
               <Box>
-                <Typography>GIVE US A CALL</Typography>
+                <Typography color="white" fontSize="20px">GIVE US A CALL</Typography>
                 <Typography>Telephone:778-476-2273</Typography>
               </Box>
             </Box>
             <Box display="flex">
-              <Box><PlaceIcon/></Box>
+              <Box sx={{
+                "& svg:hover": {
+                  color: "green",
+                  transform: "translateX(5px)",
+                  transition: "all 400ms",
+                }
+              }}><PlaceIcon/></Box>
               <Box>
-                <Typography>ADRESS</Typography>
+                <Typography color="white" fontSize="20px">ADDRESS</Typography>
                 <Typography>Ashoka Indian Restaurant
                     101 Westminster Ave W,
                     Penticton, BC V2A 1J7</Typography>
               </Box>
             </Box>
             <Box display="flex">
-              <Box><EmailIcon/></Box>
+              <Box sx={{
+                "& svg:hover": {
+                  color: "green",
+                  transform: "translateX(5px)",
+                  transition: "all 400ms",
+                }
+              }}><EmailIcon/></Box>
               <Box>
-                <Typography>SEND US A MESSAGE</Typography>
+                <Typography color="white" fontSize="20px">SEND US A MESSAGE</Typography>
                 <Typography>lalitarora25@yahoo.ca</Typography>
               </Box>
             </Box>
@@ -80,8 +104,10 @@ const Footer = () => {
       </Box>
 
 
+
+      {/* FORM SECTION */}
       <Box
-        sx={{ textAlign: "center", bgcolor: "#838996", color: "white", p: 3 }}
+        sx={{ textAlign: "center", bgcolor: "#838996", color: "black", p: 3 }}
       >
         <Typography
           variant="h4"
@@ -113,14 +139,14 @@ const Footer = () => {
               label="Your Email"
               size="normal"
             />
-            <Button variant="contained" size="large" color="success" sx={{p:1, my:2.5}}>SUBSCRIBE</Button>
+            <Button variant="contained" size="large" color="success"  sx={{p:1, my:2.5}}>SUBSCRIBE</Button>
           </div>
         </Box>
       </Box>
 
-
+      {/* SOCIAL SITES  SECTION */}
       <Box
-        sx={{ textAlign: "center", bgcolor: "#34282C", color: "white", p: 0.2 }}
+        sx={{ textAlign: "center", bgcolor: "#34282C", color: "goldenrod", p: 0.2 }}
       >
         <Box
           sx={{
@@ -145,9 +171,9 @@ const Footer = () => {
         </Box>
       </Box>
 
-
+      {/* LOWER SECTION FOOTER */}
       <Box
-        sx={{ textAlign: "center", bgcolor: "#1A1A19", color: "white", p: "5px" }}
+        sx={{ textAlign: "center", bgcolor: "#1A1A19", color: "goldenrod", p: "5px" }}
       >
         <Typography
           variant="h6"
