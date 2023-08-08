@@ -34,7 +34,7 @@ const sliderImageData = [
     {
         "id":"7",
         "image":"/home/himansu/Desktop/projects/ARestaurant/client/src/slideshow/imageslider/salad.jpeg",
-        "title":"chicken"
+        "title":"salad"
     }
 ]
 
